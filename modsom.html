@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/citizen.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="icon" href="assets/img/Toggles.png" type="image/x-icon">
+  <title>Mod Som - Rzharo</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <h1><i class="bi bi-toggles"></i> Rzharo</i></h1>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          
+          <li class="nav-item submenu-container">
+            <a href="#" class="nav-link submenu-toggle">Wallpapers <i class="bi bi-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="wallpapermobile.html">ㅤCelular</a></li>
+              <li><a href="wallpaperdesktop.html">ㅤComputador</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item submenu-container">
+            <a href="#" class="nav-link submenu-toggle">Downloads <i class="bi bi-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="citizen.html">ㅤCitizen</a></li>
+              <li><a href="modsom.html">ㅤMod Som</a></li>
+              <li><a href="arquivos.html">ㅤArquivos</a></li>
+              <li><a href="cursores.html">ㅤCursores</a></li>
+              <li><a href="windows.html">ㅤWindows</a></li>
+              <li><a href="orbs.html">ㅤOrbs</a></li>
+              <li><a href="icons.html">ㅤIcons</a></li>
+              <li><a href="programas.html">ㅤProgramas</a></li>
+              <li><a href="emuladores.html">ㅤEmuladores</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item"><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+          <li class="nav-item">
+            <a href="#" target="_blank"></a><button class="btn-loja">Loja</button>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()">
+          <img class="icon" src="assets/img/menu_white_36dp.svg" alt="Menu" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item mobile-submenu-container">
+          <a href="#" class="nav-link mobile-submenu-toggle">Downloads<i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-submenu">
+            <li><a href="programamobile.html">Programas</a></li>
+            <li><a href="arquivosmob.html">Arquivos</a></li>
+            <li><a href="wallpapermobile.html">Wallpapers</a></li>
+            <li><a href="icons.html">Icons</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+      </ul>
+    </div>
+    
+  </header>
+
+  <main>
+    <section class="video-section">
+      <h2 class="section-title">Mod Som</h2>
+
+      <div class="video-grid">
+        <!-- Card -->
+        <div class="video-card">
+          <div class="video-preview" data-video-id="tJ61O62znOE">
+            <img src="https://img.youtube.com/vi/tJ61O62znOE/maxresdefault.jpg" alt="Thumbnail">
+            <div class="play-button">▶</div>
+          </div>
+          <button class="download-button" data-link="https://discord.com/channels/1198522644853690429/1349310017588957206"><i class="bi bi-download"></i>ㅤDownload</button>
+        </div>
+        
+        
+
+        <!-- Card -->
+        <div class="video-card">
+          <div class="video-preview" data-video-id="G-4sJs31Tw8">
+            <img src="https://img.youtube.com/vi/G-4sJs31Tw8/maxresdefault.jpg" alt="Thumbnail">
+            <div class="play-button">▶</div>
+          </div>
+          <button class="download-button" data-link="https://discord.com/channels/1198522644853690429/1349310017588957206"><i class="bi bi-download"></i>ㅤDownload</button>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Modal Dinâmico -->
+    <div id="download-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+
+        <!-- Vídeo acima do texto -->
+        <iframe id="modal-video" width="100%" height="250" src="" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+
+        <h3>Para desbloquear o link:</h3>
+        <div class="steps">
+          <button class="step" data-url="https://youtu.be/G-4sJs31Tw8?si=uGS0tfcS2A3pttyP">
+            <i class="bi bi-chat-square-dots-fill"></i> ㅤComente no vídeo
+          </button>
+          <button class="step" data-url="https://youtu.be/G-4sJs31Tw8?si=uGS0tfcS2A3pttyP">
+            <i class="bi bi-hand-thumbs-up-fill"></i> ㅤDeixe o like
+          </button>
+          <button class="step" data-url="https://www.youtube.com/@rzharo1/featured">
+            <i class="bi bi-clipboard-data-fill"></i> ㅤInscreva-se
+          </button>
+        </div>
+
+
+        <a id="final-download-link" href="#" target="_blank" class="final-download" style="display: none;">
+          Desbloquear Link
+        </a>
+      </div>
+    </div>
+
+
+    <section class="comunidade">
+      <div class="card">
+        <p>Junte-se à nossa comunidade no Discord e tenha acesso antecipado a novidades, conteúdos exclusivos, Um espaço para trocar ideias com outros membros assim como você!</p>
+        <a href="https://chat.whatsapp.com/KmJFKhplGd8C9FSBdhNToY" target="_blank" class="botao-comunidade">Entrar na Comunidade</a>
+      </div>
+
+      <div class="card card ocultar-no-celular">
+        <p>Seu PC tá travando ou rodando mal? Garanta nossa otimização e sinta o desempenho voando com uma fluidez insana! E o melhor: se não curtir, a gente devolve seu dinheiro. Sem enrolação!</p>
+        <a href="https://api.whatsapp.com/send?phone=5516997370986&text=Eai%20Rz..." target="_blank" class="botao-comunidade">Adquirir</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2025 rzharo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+
+document.querySelectorAll('.video-preview').forEach(preview => {
+  preview.addEventListener('click', () => {
+    const videoId = preview.getAttribute('data-video-id');
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.frameBorder = "0";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = true;
+    iframe.style.width = "100%";
+    iframe.style.height = "180px";
+    iframe.style.borderRadius = "10px";
+
+    preview.replaceWith(iframe);
+  });
+});
+
+
+
+    const buttons = document.querySelectorAll('.download-button');
+    const modal = document.getElementById('download-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const finalLink = document.getElementById('final-download-link');
+    const steps = document.querySelectorAll('.step');
+    const modalVideo = document.getElementById('modal-video');
+
+    let completedSteps = 0;
+
+    // Lista de vídeos para sortear aleatoriamente
+    const videos = [
+      "https://www.youtube.com/embed/eI5FkVWz_dI",
+      "https://www.youtube.com/embed/q_xeCu3P9hU",
+      "https://www.youtube.com/embed/u4lcUooNNLY",
+      "https://www.youtube.com/embed/De-F3hLk_FE",
+      "https://www.youtube.com/embed/DhbNBA4gBM0",
+      "https://www.youtube.com/embed/q0ZvR3pFJWM"
+    ];
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const downloadLink = button.getAttribute('data-link');
+        finalLink.href = downloadLink;
+        finalLink.style.display = 'none';
+
+        // Zera os passos e exibe o modal
+        completedSteps = 0;
+        steps.forEach(step => step.classList.remove('done'));
+        modal.classList.remove('hidden');
+
+        // Escolhe um vídeo aleatório e aplica autoplay
+        const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+        modalVideo.src = randomVideo + "?autoplay=1";
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      modalVideo.src = ""; // Para o vídeo
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modalVideo.src = ""; // Para o vídeo
+      }
+    });
+
+    steps.forEach(step => {
+      step.addEventListener('click', () => {
+        if (!step.classList.contains('done')) {
+          step.classList.add('done');
+          completedSteps++;
+        }
+
+        // Abre link do botão (caso tenha o atributo data-url)
+        const url = step.getAttribute('data-url');
+        if (url) {
+          window.open(url, '_blank');
+        }
+
+        if (completedSteps === steps.length) {
+          finalLink.style.display = 'inline-block';
+        }
+      });
+    });
+
+
+
+
+
+
+
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) { // 50px é o quanto precisa rolar para mudar
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Remover o bloqueio de inspeção de código e combinações de teclas (F12, Ctrl+Shift+I, etc)
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I') || (event.ctrlKey && event.shiftKey && event.key === 'J') || (event.ctrlKey && (event.key === 'U' || event.key === 'S' || event.key === 'P'))) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+});
+// Permitir o clique direito na página
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();  // Permite o clique direito
+});
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="icon" href="assets/img/Toggles.png" type="image/x-icon">
+  <title>Rzharo Oficial</title>
+</head>
+
+<body>
+
+  <div class="preloader" id="preloader">
+    <a href="index.html">
+      <img src="assets/img/Toggles.png" alt="Logo" class="logo">
+    </a>
+  </div>
+
+  <!-- Conteúdo principal do site -->
+  <div class="site-content" style="opacity: 0;">
+    <!-- Seu site aqui -->
+  </div>
+
+
+  <header>
+    <nav class="nav-bar">
+      <div class="logorz">
+        <h1><i class="bi bi-toggles"></i> Rzharo</i></h1>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          
+          <li class="nav-item submenu-container">
+            <a href="#" class="nav-link submenu-toggle">Wallpapers <i class="bi bi-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="wallpapermobile.html">ㅤCelular</a></li>
+              <li><a href="wallpaperdesktop.html">ㅤComputador</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item submenu-container">
+            <a href="#" class="nav-link submenu-toggle">Downloads <i class="bi bi-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="citizen.html">ㅤCitizen</a></li>
+              <li><a href="modsom.html">ㅤMod Som</a></li>
+              <li><a href="arquivos.html">ㅤArquivos</a></li>
+              <li><a href="cursores.html">ㅤCursores</a></li>
+              <li><a href="windows.html">ㅤWindows</a></li>
+              <li><a href="orbs.html">ㅤOrbs</a></li>
+              <li><a href="icons.html">ㅤIcons</a></li>
+              <li><a href="programas.html">ㅤProgramas</a></li>
+              <li><a href="emuladores.html">ㅤEmuladores</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+          <li class="nav-item">
+            <a href="#" target="_blank"></a><button class="btn-loja">Loja</button>
+          </li>          
+        </ul>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()">
+          <img class="icon" src="assets/img/menu_white_36dp.svg" alt="Menu" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item mobile-submenu-container">
+          <a href="#" class="nav-link mobile-submenu-toggle">Downloads<i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-submenu">
+            <li><a href="programamobile.html">Programas</a></li>
+            <li><a href="arquivosmob.html">Arquivos</a></li>
+            <li><a href="wallpapermobile.html">Wallpapers</a></li>
+            <li><a href="icons.html">Icons</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="banner-section">
+      <div class="banner-container">
+        <div class="banner-content">
+          <h1>Site Oficial <i class="bi bi-patch-check-fill"></i></h1>
+          <p class="banner-description">Conheça conteúdos exclusivos, ferramentas, downloads e muito mais.</p>
+          <p class="banner-description">O conhecimento é um tesouro que deve ser exibido por aí.</p>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title" id="pcspec">Videos Mais Procurados</h2>
+
+    <section class="videos">
+      <iframe width="100%" src="https://www.youtube.com/embed/18_GOKswHtU" allowfullscreen></iframe>
+      <iframe width="100%" src="https://www.youtube.com/embed/tJ61O62znOE" allowfullscreen></iframe>
+      <iframe width="100%" src="https://www.youtube.com/embed/i0n0NaLjh-Q" allowfullscreen></iframe>
+    </section>
+
+    <h2 class="section-title" id="pcspec">Últimos Conteúdos</h2>
+
+    <section class="videos" id="ultimos-conteudos">
+      <div id="videos-container" class="videos-container"></div>
+    </section>
+
+    <section class="comunidade">
+      <div class="card">
+        <p>Junte-se à nossa comunidade no Discord e tenha acesso antecipado a novidades, conteúdos exclusivos, Um espaço
+          para trocar ideias com outros membros assim como você!</p>
+        <a href="https://chat.whatsapp.com/KmJFKhplGd8C9FSBdhNToY" target="_blank" class="botao-comunidade">Entrar na
+          Comunidade</a>
+      </div>
+
+      <div class="card card ocultar-no-celular">
+        <p>Seu PC tá travando ou rodando mal? Garanta nossa otimização e sinta o desempenho voando com uma fluidez
+          insana! E o melhor: se não curtir, a gente devolve seu dinheiro. Sem enrolação!</p>
+          <a href="https://api.whatsapp.com/send?phone=5516997370986&text=Eai%20Rz..." target="_blank" class="botao-comunidade">
+            Adquirir
+          </a>
+          
+      </div>
+
+    </section>
+
+    <section class="botoes-sociais">
+      <a href="https://chat.whatsapp.com/KmJFKhplGd8C9FSBdhNToY" target="_blank" class="botao-social">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://discord.com/invite/pnrb3ZJK8z" target="_blank" class="botao-social">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://www.instagram.com/rzharo/" target="_blank" class="botao-social">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2025 rzharo. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    window.onload = function () {
+      const preloader = document.querySelector('.preloader');
+      const content = document.querySelector('.site-content');
+
+      // Deixa o preloader visível por 1 segundo antes de iniciar o fade-out
+      setTimeout(function () {
+        preloader.classList.add('hidden');
+
+        // Após o fade-out (1.5s), oculta o preloader e exibe o conteúdo
+        setTimeout(function () {
+          preloader.style.display = 'none';
+          content.style.opacity = '1';
+        }, 1500); // Tempo igual ao do fade-out no CSS
+      }, 1000); // Tempo de exibição inicial do preloader
+    };
+
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+
+
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+    if (href === currentPage) {
+      link.classList.add("active-page");
+    }
+  });
+  
+  </script>
+</body>
+
+</html>

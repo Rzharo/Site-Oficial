@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/orbs.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="icon" href="assets/img/Toggles.png" type="image/x-icon">
+  <title>Orbs - Rzharo</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <h1><i class="bi bi-toggles"></i> Rzharo</i></h1>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          
+          <li class="nav-item submenu-container">
+            <a href="#" class="nav-link submenu-toggle">Wallpapers <i class="bi bi-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="wallpapermobile.html">ㅤCelular</a></li>
+              <li><a href="wallpaperdesktop.html">ㅤComputador</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item submenu-container">
+            <a href="#" class="nav-link submenu-toggle">Downloads <i class="bi bi-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="citizen.html">ㅤCitizen</a></li>
+              <li><a href="modsom.html">ㅤMod Som</a></li>
+              <li><a href="arquivos.html">ㅤArquivos</a></li>
+              <li><a href="cursores.html">ㅤCursores</a></li>
+              <li><a href="windows.html">ㅤWindows</a></li>
+              <li><a href="orbs.html">ㅤOrbs</a></li>
+              <li><a href="icons.html">ㅤIcons</a></li>
+              <li><a href="programas.html">ㅤProgramas</a></li>
+              <li><a href="emuladores.html">ㅤEmuladores</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item"><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+          <li class="nav-item">
+            <a href="#" target="_blank"></a><button class="btn-loja">Loja</button>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()">
+          <img class="icon" src="assets/img/menu_white_36dp.svg" alt="Menu" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item mobile-submenu-container">
+          <a href="#" class="nav-link mobile-submenu-toggle">Downloads<i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-submenu">
+            <li><a href="programamobile.html">Programas</a></li>
+            <li><a href="arquivosmob.html">Arquivos</a></li>
+            <li><a href="wallpapermobile.html">Wallpapers</a></li>
+            <li><a href="icons.html">Icons</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <main>
+    <!-- Section de Cards -->
+
+    <div class="centralizador">
+      <h4 class="section-title" id="pcspec">Orbs</h4>
+    </div>
+
+    <div class="search-container" style="display: flex; justify-content: center; margin: 20px 0;">
+      <input type="text" id="searchInput" placeholder="Pesquisar"
+        style="padding: 10px 20px; border-radius: 8px; border: 1px solid #0077ff; background: transparent; color: white; outline: none; width: 250px; text-align: center;" />
+    </div>
+
+
+    <section class="download-section">
+
+        <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/hello-kitty.png" alt="">
+            </div>
+            <h2>Hello Kitty</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1mspSqF5ZhpEo6MYa5h3pba6shTW93mbW/view">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbRiquinho.png" alt="">
+            </div>
+            <h2>Riquinho</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1Uc6ghztc7YQthAtJvOnSH0wKOw87s3Is/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbRzDolar.png" alt="">
+            </div>
+            <h2>Dolar</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1ZV2mx8EhGhmOLhgd9IgpVyLCRw5g8QLO/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/Thumbcuphead.png" alt="">
+            </div>
+            <h2>Cuphead</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/18m60ORQndii0orhuloaXQgNGWAWOjRnH/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbCsharp.png" alt="">
+            </div>
+            <h2>Csharp</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1UAhfHQIo-Pp3SbMjoCVSUTGhbuRhF9uW/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbRzCapsula.png" alt="">
+            </div>
+            <h2>Capsula</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/15OwVceU95XqgMexiEmrtaPuhcvOxL486/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbBWM.png" alt="">
+            </div>
+            <h2>BMW</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1UwMST6KdMy0RfWWIKRbug2lJo0qb9n2J/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbBaralho.png" alt="">
+            </div>
+            <h2>Baralho</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1IZCVtNy6JKTZbplGkaBFrsXUaOLra5Au/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbBandidoOrbs.png" alt="">
+            </div>
+            <h2>Bandido</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1HmHc9Xrtu45iYXpQa3VEdnJoQTC4qfdN/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbChuvaOrbs.png" alt="">
+            </div>
+            <h2>Nuvem</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/19n1OSuAN7Ff3GFo3YPb8pjK9tHlQVPM7/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbhellkittyV2.png" alt="">
+            </div>
+            <h2>Hello Kitty v2</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1yQtaFfEjzWmPaDwEj8nJd96MJJbYTHDP/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ThumbChoraAgrV3.png" alt="">
+            </div>
+            <h2>Chora agr rih Dps</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1FxNnxcjfO-IvfxCUg4J61qIHNKzA8WN1/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ChoraAgoraV2.png" alt="">
+            </div>
+            <h2>Chora agr rih Dps</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/15911w2UHiOKv9XoscPixvHsPqUKb69x7/view?usp=sharing">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ch.png" alt="">
+            </div>
+            <h2>Chora agr rih Dps</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1KzcWYnqoYJyWPeTS-4D5o7YZJHbaqt-W/view">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/ying.png" alt="">
+            </div>
+            <h2>Yin Yang</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1_zJoZ55FE7wWlzjvNPRWxWYllpN_qnHm/view">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/OnePiece.png" alt="">
+            </div>
+            <h2>One Piece</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1Bfb_l7dBPDC6tCjx9bGgV7IyBlAEsw2_/view">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/StarbucksCapa.png" alt="">
+            </div>
+            <h2>Starbucks</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1XCyH2MMjq490HjDHjHpb2x35IGPdmSg7/view">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/Havoc_Logo.png" alt="">
+            </div>
+            <h2>Havoc</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/1M0SWWEWnGwKREVKKKZMb5OoMMR7T9fId/view">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/Priopyti.png" alt="">
+            </div>
+            <h2>Priopyti</h2>
+            <button class="download-button" data-link="https://rekonise.com/priopyt-by-rzharorar-u3gd6">Download
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="imgcard">
+                <img src="assets/img/orbs/niagararzadamenu.png" alt="">
+            </div>
+            <h2>Niagara</h2>
+            <button class="download-button" data-link="https://drive.google.com/file/d/19CeG4xoPYiBgESw7MvokntnEK-WkiKSo/view">Download
+            </button>
+          </div>
+
+      <!-- Modal Dinâmico -->
+      <div id="download-modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+
+          <iframe id="modal-video" width="100%" height="250" src="" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+
+          <h3>Para desbloquear o link:</h3>
+          <div class="steps">
+            <button class="step" data-url="https://youtu.be/G-4sJs31Tw8?si=uGS0tfcS2A3pttyP">
+              <i class="bi bi-chat-square-dots-fill"></i> ㅤComente no vídeo
+            </button>
+            <button class="step" data-url="https://youtu.be/G-4sJs31Tw8?si=uGS0tfcS2A3pttyP">
+              <i class="bi bi-hand-thumbs-up-fill"></i> ㅤDeixe o like
+            </button>
+            <button class="step" data-url="https://www.youtube.com/@rzharo1/featured">
+              <i class="bi bi-clipboard-data-fill"></i> ㅤInscreva-se
+            </button>
+          </div>
+
+          <a id="final-download-link" href="#" target="_blank" class="final-download" style="display: none;">
+            Desbloquear Link
+          </a>
+        </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2025 rzharo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+
+    document.querySelectorAll('.video-preview').forEach(preview => {
+      preview.addEventListener('click', () => {
+        const videoId = preview.getAttribute('data-video-id');
+
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+        iframe.frameBorder = "0";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+        iframe.style.width = "100%";
+        iframe.style.height = "180px";
+        iframe.style.borderRadius = "10px";
+
+        preview.replaceWith(iframe);
+      });
+    });
+
+
+
+    const buttons = document.querySelectorAll('.download-button');
+    const modal = document.getElementById('download-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const finalLink = document.getElementById('final-download-link');
+    const steps = document.querySelectorAll('.step');
+    const modalVideo = document.getElementById('modal-video');
+
+    let completedSteps = 0;
+
+    // Lista de vídeos para sortear aleatoriamente
+    const videos = [
+      "https://www.youtube.com/embed/eI5FkVWz_dI",
+      "https://www.youtube.com/embed/q_xeCu3P9hU",
+      "https://www.youtube.com/embed/u4lcUooNNLY",
+      "https://www.youtube.com/embed/De-F3hLk_FE",
+      "https://www.youtube.com/embed/DhbNBA4gBM0",
+      "https://www.youtube.com/embed/q0ZvR3pFJWM"
+    ];
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const downloadLink = button.getAttribute('data-link');
+        finalLink.href = downloadLink;
+        finalLink.style.display = 'none';
+
+        // Zera os passos e exibe o modal
+        completedSteps = 0;
+        steps.forEach(step => step.classList.remove('done'));
+        modal.classList.remove('hidden');
+
+        // Escolhe um vídeo aleatório e aplica autoplay
+        const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+        modalVideo.src = randomVideo + "?autoplay=1";
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      modalVideo.src = ""; // Para o vídeo
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modalVideo.src = ""; // Para o vídeo
+      }
+    });
+
+    steps.forEach(step => {
+      step.addEventListener('click', () => {
+        if (!step.classList.contains('done')) {
+          step.classList.add('done');
+          completedSteps++;
+        }
+
+        // Abre link do botão (caso tenha o atributo data-url)
+        const url = step.getAttribute('data-url');
+        if (url) {
+          window.open(url, '_blank');
+        }
+
+        if (completedSteps === steps.length) {
+          finalLink.style.display = 'inline-block';
+        }
+      });
+    });
+
+
+
+
+
+
+
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) { // 50px é o quanto precisa rolar para mudar
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Remover o bloqueio de inspeção de código e combinações de teclas (F12, Ctrl+Shift+I, etc)
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I') || (event.ctrlKey && event.shiftKey && event.key === 'J') || (event.ctrlKey && (event.key === 'U' || event.key === 'S' || event.key === 'P'))) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    });
+    // Permitir o clique direito na página
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();  // Permite o clique direito
+    });
+
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.toLowerCase();
+
+      cards.forEach((card) => {
+        const title = card.querySelector("h2").textContent.toLowerCase();
+        if (title.includes(query)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

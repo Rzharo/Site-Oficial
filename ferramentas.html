@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/ferramentas.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="icon" href="assets/img/Toggles.png" type="image/x-icon">
+  <title>Rzharo Oficial</title>
+</head>
+
+<body>
+
+  <!-- Conteúdo principal do site -->
+  <div class="site-content" style="opacity: 0;">
+    <!-- Seu site aqui -->
+  </div>
+
+
+  <header>
+    <nav class="nav-bar">
+      <div class="logorz">
+        <h1><i class="bi bi-toggles"></i> Rzharo</i></h1>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          
+          <li class="nav-item submenu-container">
+            <a href="#" class="nav-link submenu-toggle">Wallpapers <i class="bi bi-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="wallpapermobile.html">ㅤCelular</a></li>
+              <li><a href="wallpaperdesktop.html">ㅤComputador</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item submenu-container">
+            <a href="#" class="nav-link submenu-toggle">Downloads <i class="bi bi-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="citizen.html">ㅤCitizen</a></li>
+              <li><a href="modsom.html">ㅤMod Som</a></li>
+              <li><a href="arquivos.html">ㅤArquivos</a></li>
+              <li><a href="cursores.html">ㅤCursores</a></li>
+              <li><a href="windows.html">ㅤWindows</a></li>
+              <li><a href="orbs.html">ㅤOrbs</a></li>
+              <li><a href="icons.html">ㅤIcons</a></li>
+              <li><a href="programas.html">ㅤProgramas</a></li>
+              <li><a href="emuladores.html">ㅤEmuladores</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+          <li class="nav-item">
+            <a href="#" target="_blank"></a><button class="btn-loja">Loja</button>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()">
+          <img class="icon" src="assets/img/menu_white_36dp.svg" alt="Menu" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item mobile-submenu-container">
+          <a href="#" class="nav-link mobile-submenu-toggle">Downloads<i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-submenu">
+            <li><a href="programamobile.html">Programas</a></li>
+            <li><a href="arquivosmob.html">Arquivos</a></li>
+            <li><a href="wallpapermobile.html">Wallpapers</a></li>
+            <li><a href="icons.html">Icons</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <main>
+
+
+    <nav>
+        <button onclick="showTool('reflex')">Reflexo do Mouse</button>
+        <button onclick="showTool('click')">Velocidade de Clique</button>
+        <button onclick="showTool('senha')">Gerador de Senha</button>
+        <button onclick="showTool('times')">Sorteador de Times</button>
+      </nav>
+    
+      <div class="container">
+        <div class="tool active" id="reflex">
+
+          <h2>Reflexo do Mouse</h2>
+          <p id="reflex-info">Clique para iniciar</p>
+          <div class="reflex-box" id="reflex-box" onclick="startReflexTest()">Clique para iniciar</div>
+        </div>
+    
+        <div class="tool" id="click">
+          <h2>Velocidade de Clique</h2>
+          <p id="click-timer">Clique para iniciar</p>
+          <div class="click-box" id="click-box" onclick="startClickTest()">Iniciar</div>
+          <p id="click-result"></p>
+        </div>
+    
+        <div class="tool" id="senha">
+          <h2>Gerador de Senha</h2>
+          <label for="senha-tamanho">Tamanho da Senha:</label>
+          <input type="number" id="senha-tamanho" min="4" max="32" value="12">
+          <button class="button" onclick="generatePassword()">Gerar Senha</button>
+          <p id="password-result"></p>
+        </div>
+    
+        <div class="tool" id="times">
+          <h2>Sorteador de Times</h2>
+          <label>Quantas pessoas por time?</label>
+          <input type="number" id="people-per-team" min="1" max="10" onchange="createNameInputs()">
+          <div class="inputs" id="name-inputs"></div>
+          <button class="button" onclick="sortTeams()">Sortear</button>
+        </div>
+      </div>
+    
+      <div class="modal" id="team-modal">
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2025 rzharo. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
+  <script src="assets/js/script.js"></script>
+  <script>
+
+function showTool(id) {
+      document.querySelectorAll('.tool').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    // Reflexo
+    let reflexStarted = false;
+    let reflexTimeout, startTime;
+
+    function startReflexTest() {
+      if (reflexStarted) return;
+      reflexStarted = true;
+      const box = document.getElementById('reflex-box');
+      box.textContent = 'Espere...';
+      box.style.backgroundColor = 'red';
+      const delay = Math.random() * 3000 + 2000;
+      reflexTimeout = setTimeout(() => {
+        box.style.backgroundColor = 'blue';
+        box.textContent = 'CLIQUE AGORA!';
+        box.onclick = () => {
+          const reactionTime = Date.now() - startTime;
+          alert(`Seu tempo de reação foi ${reactionTime} ms.`);
+          box.textContent = 'Clique para iniciar';
+          box.style.backgroundColor = '#0a707e';
+          box.onclick = startReflexTest;
+          reflexStarted = false;
+        };
+        startTime = Date.now();
+      }, delay);
+    }
+
+    // Clique
+    function startClickTest() {
+      const box = document.getElementById('click-box');
+      const timerText = document.getElementById('click-timer');
+      let clicks = 0;
+      let seconds = 10;
+      box.textContent = 'Clique!';
+      box.classList.add('active');
+      box.onclick = () => {
+        clicks++;
+        box.style.backgroundColor = box.style.backgroundColor === '#007bff' ? '#0a5d7e' : '#0f7f93';
+      };
+      const countdown = setInterval(() => {
+        seconds--;
+        timerText.textContent = `${seconds}s restantes...`;
+      }, 1000);
+      setTimeout(() => {
+        clearInterval(countdown);
+        box.onclick = null;
+        const cps = (clicks / 10).toFixed(2);
+        document.getElementById('click-result').textContent = `Você fez ${clicks} cliques em 10 segundos. São ${cps} cliques por segundo.`;
+        box.textContent = 'Iniciar';
+        box.classList.remove('active');
+        timerText.textContent = 'Clique para iniciar';
+      }, 10000);
+    }
+
+    // Senha
+    function generatePassword() {
+      const length = document.getElementById('senha-tamanho').value;
+      const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()';
+      let password = '';
+      for (let i = 0; i < length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      document.getElementById('password-result').textContent = password;
+    }
+
+    // Times
+    function createNameInputs() {
+      const count = document.getElementById('people-per-team').value;
+      const total = count * 2;
+      const container = document.getElementById('name-inputs');
+      container.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const input = document.createElement('input');
+        input.placeholder = `Nome ${i + 1}`;
+        container.appendChild(input);
+      }
+    }
+
+    function sortTeams() {
+      const inputs = [...document.querySelectorAll('#name-inputs input')];
+      const names = inputs.map(input => input.value.trim()).filter(name => name);
+      if (names.length !== inputs.length) return alert('Preencha todos os nomes.');
+      const shuffled = names.sort(() => 0.5 - Math.random());
+      const half = names.length / 2;
+      const team1 = shuffled.slice(0, half);
+      const team2 = shuffled.slice(half);
+      document.getElementById('modal-content').innerHTML = '<h3>Carregando...</h3>';
+      document.getElementById('team-modal').style.display = 'flex';
+      setTimeout(() => {
+        document.getElementById('modal-content').innerHTML = `
+          <h3>Time 1</h3><p>${team1.join(', ')}</p>
+          <h3>Time 2</h3><p>${team2.join(', ')}</p>
+          <button class="button" onclick="closeModal()">Fechar</button>
+        `;
+        document.getElementById('name-inputs').innerHTML = '';
+        document.getElementById('people-per-team').value = '';
+      }, 2000);
+    }
+
+    function closeModal() {
+      document.getElementById('team-modal').style.display = 'none';
+    }
+
+    window.onload = function () {
+      const preloader = document.querySelector('.preloader');
+      const content = document.querySelector('.site-content');
+
+      // Deixa o preloader visível por 1 segundo antes de iniciar o fade-out
+      setTimeout(function () {
+        preloader.classList.add('hidden');
+
+        // Após o fade-out (1.5s), oculta o preloader e exibe o conteúdo
+        setTimeout(function () {
+          preloader.style.display = 'none';
+          content.style.opacity = '1';
+        }, 1500); // Tempo igual ao do fade-out no CSS
+      }, 1000); // Tempo de exibição inicial do preloader
+    };
+
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+
+
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+    if (href === currentPage) {
+      link.classList.add("active-page");
+    }
+  });
+  
+  </script>
+</body>
+
+</html>
